@@ -109,6 +109,46 @@
   font-weight: 900;
   font-style: italic;
 }
+.purple50 {
+  background-color: hsl(260, 100%, 95%);
+  color: black;
+}
+.purple300 {
+  background-color: hsl(264, 82%, 80%);
+  color: black;
+}
+.purple500 {
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+}
+.white {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+}
+.grey100 {
+  background-color: hsl(214, 17%, 92%);
+  color: black;
+}
+.grey200 {
+  background-color: hsl(0, 0%, 81%);
+  color: black;
+}
+.grey400 {
+  background-color: hsl(224, 10%, 45%);
+  color: white;
+}
+.grey500 {
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+}
+.darkblue {
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+}
+.black {
+  background-color: hsl(0, 0%, 7%);
+  color: white;
+}
 body {
   font-size: 13px;
   font-family: "barlow semi condensed";
@@ -148,13 +188,13 @@ blockquote {
 }
 .Daniel {
   grid-column: 1 / span 2;
-  background-color: violet;
+  /* background-color: violet; */
 }
 .Patrick {
   grid-column-end: -1;
   grid-column: span 2;
-  background-color: black;
-  color: white;
+  /* background-color: black;
+  color: white; */
 }
 .Kira {
   grid-column-end: -1;
@@ -165,7 +205,7 @@ blockquote {
   grid-row: 2;
 }
 .Jonathan {
-  background-color: gray;
+  /* background-color: gray; */
 }
 @media only screen and (max-width: 900px) {
   .grid-container {
