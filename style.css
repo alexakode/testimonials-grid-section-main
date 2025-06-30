@@ -172,6 +172,9 @@ blockquote {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+img{
+  border-radius: 50%;
+}
 @media only screen and (min-width: 1201px) {
   .grid-container {
     display: flex;
@@ -206,6 +209,9 @@ blockquote {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
+  }
+  .title {
+    flex-direction: column;
   }
   .Daniel {
     grid-column: 1 / span 2;
