@@ -172,75 +172,92 @@ blockquote {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto;
-  gap: 1rem;
-  padding: 1rem;
-  /*grid-template-areas: ;
-   "Daniel Daniel Jonathan Kira" */
-  /* "Jeanette Patrick Patrick Kira" */
-}
-.grid-container > div {
-  border-radius: 0.5rem;
-  padding: 2rem;
-}
-.header{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-.Daniel {
-  grid-column: 1 / span 2;
-  /* background-color: violet; */
-}
-.Patrick {
-  grid-column-end: -1;
-  grid-column: span 2;
-  /* background-color: black;
-  color: white; */
-}
-.Kira {
-  grid-column-end: -1;
-  grid-row: span 2;
-}
-.Jeanette {
-  grid-column: 1;
-  grid-row: 2;
-}
-.Jonathan {
-  /* background-color: gray; */
-}
-@media only screen and (max-width: 900px) {
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .Jeanette {
-    grid-column: span 2;
-  }
-  /*.Kira {
-     grid-row: span 1; 
-  }*/
-}
-@media only screen and (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .Jeanette {
-    grid-column: span 1;
-  }
-  .Jonathan {
-    grid-column: 1;
-  }
-  .Kira {
-    grid-row: 2 / span 2;
-  }
-}
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 1201px) {
   .grid-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .grid-container div {
+    flex: 1;
+    width: 300px;
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    padding: 1rem;
+    /*grid-template-areas: ;
+   "Daniel Daniel Jonathan Kira" */
+    /* "Jeanette Patrick Patrick Kira" */
+  }
+  .grid-container > div {
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .Daniel {
+    grid-column: 1 / span 2;
+    /* background-color: violet; */
+  }
+  .Patrick {
+    grid-column-end: -1;
+    grid-column: span 2;
+    /* background-color: black;
+  color: white; */
+  }
+  .Kira {
+    grid-column-end: -1;
+    grid-row: span 2;
+  }
+  .Jeanette {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  /* .Jonathan { */
+  /* background-color: gray; */
+  /* } */
+  @media only screen and (max-width: 900px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .Jeanette {
+      grid-column: span 2;
+    }
+    /*.Kira {
+     grid-row: span 1; 
+  }*/
+  }
+  @media only screen and (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Jeanette {
+      grid-column: span 1;
+    }
+    .Jonathan {
+      grid-column: 1;
+    }
+    .Kira {
+      grid-row: 2 / span 2;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
