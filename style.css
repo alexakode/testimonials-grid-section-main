@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -8,27 +12,49 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  /* grid-template-areas:
-    "Daniel Daniel Jonathan Kira"
-    "Jeanette Patrick Patrick Kira" */
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  grid-template-areas: ;
+  /* "Daniel Daniel Jonathan Kira" */
+  /* "Jeanette Patrick Patrick Kira" */
+}
+.grid-container > div {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 .Daniel {
-  grid-column: 1 / 3;
+  grid-column: 1 / span 2;
   background-color: violet;
 }
 .Patrick {
-  grid-column: 2 / 4;
+  grid-column: 2 / span 2;
   background-color: black;
   color: white;
 }
 .Kira {
-  grid-column: 4 / 5;
-  grid-row: 1 / 3;
+  grid-column: -1 span 1;
+  grid-row: span 2;
 }
 .Jeanette {
   grid-column: 1 / 2;
 }
 .Jonathan {
   background-color: gray;
+}
+@media only screen and (max-width: 900px) {
+  grid-template-columns: repeat(3, 1fr);
+  /* .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .grid-container > div {
+    flex: 1 1 calc(33% - 1rem);
+  } */
+}
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
