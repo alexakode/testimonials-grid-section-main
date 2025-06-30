@@ -159,13 +159,23 @@
   .Jeanette {
     grid-column: span 2;
   }
-  .Kira {
-    /* grid-row: span 1; */
-  }
+  /*.Kira {
+     grid-row: span 1; 
+  }*/
 }
 @media only screen and (max-width: 600px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Jeanette {
+    grid-column: span 1;
+  }
+  .Jonathan {
+    grid-column: 1;
+  }
+  .Kira {
+    grid-row: 2 / span 2;
   }
 }
 @media only screen and (max-width: 400px) {
