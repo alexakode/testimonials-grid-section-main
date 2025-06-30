@@ -2,6 +2,114 @@
   margin: 0;
   box-sizing: border-box;
 }
+.barlow-semi-condensed-thin {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.barlow-semi-condensed-extralight {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.barlow-semi-condensed-light {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-semi-condensed-regular {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-semi-condensed-medium {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-semi-condensed-semibold {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-semi-condensed-bold {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-semi-condensed-extrabold {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-semi-condensed-black {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barlow-semi-condensed-thin-italic {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.barlow-semi-condensed-extralight-italic {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.barlow-semi-condensed-light-italic {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.barlow-semi-condensed-regular-italic {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.barlow-semi-condensed-medium-italic {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.barlow-semi-condensed-semibold-italic {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.barlow-semi-condensed-bold-italic {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.barlow-semi-condensed-extrabold-italic {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.barlow-semi-condensed-black-italic {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -28,16 +136,18 @@
   background-color: violet;
 }
 .Patrick {
-  grid-column: 2 / span 2;
+  grid-column-end: -1;
+  grid-column: span 2;
   background-color: black;
   color: white;
 }
 .Kira {
-  grid-column: -1 span 1;
+  grid-column-end: -1;
   grid-row: span 2;
 }
 .Jeanette {
-  grid-column: 1 / 2;
+  grid-column: 1;
+  grid-row: 2;
 }
 .Jonathan {
   background-color: gray;
@@ -46,15 +156,19 @@
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
-  /* .grid-container {
-    display: flex;
-    flex-wrap: wrap;
+  .Jeanette {
+    grid-column: span 2;
   }
-  .grid-container > div {
-    flex: 1 1 calc(33% - 1rem);
-  } */
+  .Kira {
+    /* grid-row: span 1; */
+  }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 400px) {
   .grid-container {
     display: flex;
     flex-direction: column;
