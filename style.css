@@ -109,6 +109,11 @@
   font-weight: 900;
   font-style: italic;
 }
+body {
+  font-size: 13px;
+  font-family: "barlow semi condensed";
+  font-weight: 500;
+}
 
 .attribution {
   font-size: 11px;
