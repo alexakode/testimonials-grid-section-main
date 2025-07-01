@@ -240,10 +240,18 @@ img {
   /* min-width: 300px; */
   /* border-radius: 0.5rem; */
 }
-@media only screen and (min-width: 1351px) {
+@media only screen and (min-width: 1601px) {
+  .grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 1600px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
     /* gap: 1rem; */
     /* padding: 1rem; */
   }
