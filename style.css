@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  box-sizing: border-box;
+  /* margin: 0.1rem; */
+  /* box-sizing: border-box; */
 }
 .barlow-semi-condensed-thin {
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -164,15 +164,18 @@ h6 {
 }
 blockquote {
   font-size: 2em;
+  margin: 0;
+  z-index: 2;
 }
-h1{
+h1 {
   font-size: 1.2em;
 }
-h2{
-  font-size: .8em;
+h2 {
+  font-size: 0.8em;
 }
-h2,q{
-  opacity: .6;
+h2,
+q {
+  opacity: 0.6;
 }
 .attribution {
   font-size: 11px;
@@ -194,21 +197,26 @@ body div {
 img {
   border-radius: 28px;
   object-fit: fill;
+  z-index: 2;
 }
 .header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 0;
   /* padding: auto; */
-  z-index: 1;
+  /* z-index: 2; */
 }
 .title {
   flex-direction: column;
+  z-index: 2;
 }
-.grid-container div {
-  padding: 2rem;
-  z-index: -1;
+.grid-container {
+  margin: 1rem;
+  padding: 1rem;
+  gap: 1rem;
+  z-index: 0;
 }
 .Daniel {
   position: relative;
@@ -219,21 +227,21 @@ img {
   right: 2rem;
   top: 0;
   object-position: 100%;
-  z-index: -1;
+  z-index: 0;
+}
+.grid-container > div {
+  padding: 2rem;
+  flex: 1;
+  width: 300px;
+  /* border-radius: 0.5rem; */
 }
 @media only screen and (min-width: 1201px) {
   .grid-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
+    /* gap: 1rem; */
     /* padding: 1rem; */
-  }
-  .grid-container div {
-    flex: 1;
-    width: 300px;
-    /* border-radius: 0.5rem; */
-    padding: 1rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -241,8 +249,8 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto;
-    gap: 1rem;
-    padding: 1rem;
+    /* gap: 1rem;
+    padding: 1rem; */
     /*grid-template-areas: ;
    "Daniel Daniel Jonathan Kira" */
     /* "Jeanette Patrick Patrick Kira" */
