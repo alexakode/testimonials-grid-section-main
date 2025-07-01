@@ -1,6 +1,6 @@
 * {
   /* margin: 0.1rem; */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 .barlow-semi-condensed-thin {
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -219,8 +219,8 @@ img {
 }
 .grid-container {
   display: grid;
-  margin: 1rem;
-  padding: 1rem;
+  /* margin: 1rem; */
+  /* padding: 1rem; */
   gap: 1rem;
 }
 .Daniel {
@@ -237,22 +237,30 @@ img {
 .grid-container > div {
   padding: 2rem;
   flex: 1;
-  min-width: 300px;
+  /* min-width: 300px; */
   /* border-radius: 0.5rem; */
 }
-@media only screen and (min-width: 1201px) {
-  .grid-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* gap: 1rem; */
-    /* padding: 1rem; */
-  }
-}
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1351px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    /* gap: 1rem; */
+    /* padding: 1rem; */
+  }
+  .Daniel {
+    grid-column: span 2;
+  }
+  .Kira {
+    grid-row: span 2;
+  }
+  .Patrick {
+    grid-column: span 2;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
     /* gap: 1rem;
     padding: 1rem; */
@@ -264,13 +272,12 @@ img {
   /* border-radius: 0.5rem; */
   /* padding: 2rem; */
   /* } */
-  .Daniel {
-    grid-column: 1 / span 2;
-    /* background-color: violet; */
-  }
+  /* .Daniel {
+    grid-column: 1 / span 2; */
+  /* background-color: violet; */
   .Patrick {
-    grid-column-end: -1;
-    grid-column: span 2;
+    /* grid-column-end: -1; */
+    /* grid-column: span 2; */
     /* background-color: black;
   color: white; */
   }
@@ -278,26 +285,29 @@ img {
     grid-column-end: -1;
     grid-row: span 2;
   }
-  .Jeanette {
+  /* .Jeanette {
     grid-column: 1;
     grid-row: 2;
+  } */
+}
+
+@media only screen and (max-width: 900px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  /* .Jonathan { */
-  /* background-color: gray; */
-  /* } */
-  @media only screen and (max-width: 900px) {
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .Jeanette {
+  /* .Jeanette {
       grid-column: span 2;
     } */
-  /*.Kira {
-     grid-row: span 1; 
+  .Jonathan {
+    grid-column-end: -2;
+  }
+  .Kira {
+    grid-row: span 2;
+    grid-row-start: 1;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   .grid-container {
     display: flex;
     flex-direction: column;
