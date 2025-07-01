@@ -191,7 +191,7 @@ q {
 }
 body div {
   /* padding: 2em; */
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 .imgcontainer {
   object-fit: fill;
@@ -239,6 +239,7 @@ img {
   flex: 1;
   /* min-width: 300px; */
   /* border-radius: 0.5rem; */
+  box-shadow: 10px 10px 20px gray;
 }
 @media only screen and (min-width: 1601px) {
   .grid-container {
@@ -280,9 +281,9 @@ img {
   /* border-radius: 0.5rem; */
   /* padding: 2rem; */
   /* } */
-  /* .Daniel {
-    grid-column: 1 / span 2; */
-  /* background-color: violet; */
+  .Daniel {
+    grid-column: 1 / span 3;
+  }
   .Patrick {
     /* grid-column-end: -1; */
     /* grid-column: span 2; */
@@ -293,10 +294,10 @@ img {
     grid-column-end: -1;
     grid-row: span 2;
   }
-  /* .Jeanette {
+  .Jeanette {
     grid-column: 1;
     grid-row: 2;
-  } */
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -312,7 +313,13 @@ img {
   }
   .Kira {
     grid-row: span 2;
-    grid-row-start: 1;
+    grid-row-start: 2;
+  }
+  .Patrick {
+    grid-column: span 2;
+  }
+  .attribution {
+    grid-column: span 2;
   }
 }
 @media only screen and (max-width: 600px) {
