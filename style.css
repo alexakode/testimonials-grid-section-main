@@ -172,8 +172,31 @@ blockquote {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+body div {
+  /* padding: 2em; */
+  border-radius: 1em;
+}
+.imgcontainer {
+  object-fit: fill;
+  width: fit-content;
+  height: fit-content;
+  /* border-radius: 50%; */
+}
 img {
-  border-radius: 50%;
+  border-radius: 28px;
+  object-fit: contain;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.title {
+  flex-direction: column;
+}
+.grid-container div {
+  padding: 2rem;
 }
 @media only screen and (min-width: 1201px) {
   .grid-container {
@@ -181,13 +204,13 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
   .grid-container div {
     flex: 1;
     width: 300px;
-    border-radius: 0.5rem;
-    padding: 2rem;
+    /* border-radius: 0.5rem; */
+    padding: 1rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -202,17 +225,8 @@ img {
     /* "Jeanette Patrick Patrick Kira" */
   }
   .grid-container > div {
-    border-radius: 0.5rem;
-    padding: 2rem;
-  }
-  .header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1em;
-  }
-  .title {
-    flex-direction: column;
+    /* border-radius: 0.5rem; */
+    /* padding: 2rem; */
   }
   .Daniel {
     grid-column: 1 / span 2;
