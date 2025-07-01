@@ -166,12 +166,17 @@ blockquote {
   font-size: 2em;
   margin: 0;
   z-index: 2;
+  position: relative;
 }
 h1 {
   font-size: 1.2em;
+  z-index: 2;
+  position: relative;
 }
 h2 {
   font-size: 0.8em;
+  z-index: inherit;
+  position: relative;
 }
 h2,
 q {
@@ -197,7 +202,7 @@ body div {
 img {
   border-radius: 28px;
   object-fit: fill;
-  z-index: 2;
+  /* z-index: 2; */
 }
 .header {
   display: flex;
@@ -210,14 +215,13 @@ img {
 }
 .title {
   flex-direction: column;
-  z-index: 2;
+  /* z-index: 2; */
 }
 .grid-container {
   display: grid;
   margin: 1rem;
   padding: 1rem;
   gap: 1rem;
-  z-index: 0;
 }
 .Daniel {
   position: relative;
@@ -289,29 +293,28 @@ img {
     .Jeanette {
       grid-column: span 2;
     } */
-    /*.Kira {
+  /*.Kira {
      grid-row: span 1; 
   }*/
+}
+@media only screen and (max-width: 1100px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  @media only screen and (max-width: 1100px) {
-    .grid-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
 
-    .Jeanette {
-      grid-column: span 1;
-    }
-    .Jonathan {
-      grid-column: 1;
-    }
-    .Kira {
-      grid-row: 2 / span 2;
-    }
+  .Jeanette {
+    grid-column: span 1;
   }
-  @media only screen and (max-width: 700px) {
-    .grid-container {
-      display: flex;
-      flex-direction: column;
-    }
+  .Jonathan {
+    grid-column: 1;
+  }
+  .Kira {
+    grid-row: 2 / span 2;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
   }
 }
