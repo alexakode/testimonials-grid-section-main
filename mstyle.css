@@ -121,7 +121,7 @@
 }
 .purple500 {
   background-color: hsl(263, 55%, 52%);
-  background-color: oklch(0.5 0.2 300);
+  background-color: oklch(55.938% 0.17517 2.088);
   color: white;
   /* border-color: hsl(264, 82%, 80%); */
 }
