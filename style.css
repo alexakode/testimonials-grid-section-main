@@ -245,11 +245,18 @@ img {
   /* border-radius: 0.5rem; */
   box-shadow: 10px 10px 20px gray;
 }
-@media only screen and (min-width: 1601px) {
+@media only screen and (min-width: 1850px) {
   .grid-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 1849px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto;
   }
 }
 @media only screen and (max-width: 1600px) {
