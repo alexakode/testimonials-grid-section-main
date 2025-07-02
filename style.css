@@ -120,6 +120,7 @@
 .purple500 {
   background-color: hsl(263, 55%, 52%);
   color: white;
+  /* border-color: hsl(264, 82%, 80%); */
 }
 .white {
   background-color: hsl(0, 0%, 100%);
@@ -200,6 +201,8 @@ body div {
   /* border-radius: 50%; */
 }
 img {
+  border: 2px solid;
+  border-color: color-mix(in srgb, currentColor 50%, transparent 50%);
   border-radius: 28px;
   object-fit: fill;
   /* z-index: 2; */
@@ -228,6 +231,7 @@ img {
 }
 .Q {
   border-radius: 0%;
+  border: 0px;
   position: absolute;
   right: 2rem;
   top: 0;
