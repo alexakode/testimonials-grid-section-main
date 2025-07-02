@@ -1,7 +1,7 @@
-* {
+/* * {
   /* margin: 0.1rem; */
   /* box-sizing: border-box; */
-}
+/* } */
 .barlow-semi-condensed-thin {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 100;
@@ -314,7 +314,7 @@ img {
   .Daniel {
     grid-column: 1 / span 2;
   }
-  .Patrick {
+  /* .Patrick { */
     /* grid-column-end: -1; */
     /* grid-column: span 2; */
     /* background-color: black;

@@ -109,6 +109,8 @@
   font-weight: 900;
   font-style: italic;
 }
+/* Original colour scheme, classes in index.html pick colours directly */
+color-scheme: light dark;
 .purple50 {
   background-color: hsl(260, 100%, 95%);
   background-color: oklch(0.9 0 300);
@@ -121,14 +123,16 @@
 }
 .purple500 {
   background-color: hsl(263, 55%, 52%);
-  background-color: oklch(55.938% 0.17517 2.088);
+  background-color: oklch(.5 0.06 300);
   color: white;
+  color: oklch(1 0 300)
   /* border-color: hsl(264, 82%, 80%); */
 }
 .white {
   background-color: hsl(0, 0%, 100%);
-  background-color: oklch(1 0 0);
+  background-color: oklch(.9 0 300);
   color: black;
+  color: oklch(.4 0.1 300)
 }
 .grey100 {
   background-color: hsl(214, 17%, 92%);
@@ -147,12 +151,12 @@
 }
 .grey500 {
   background-color: hsl(217, 19%, 35%);
-  background-color: oklch(0.5 0 0);
+  background-color: oklch(0.5 0 300);
   color: white;
 }
 .darkblue {
   background-color: hsl(219, 29%, 14%);
-  background-color: oklch(0.3 0.05 260);
+  background-color: oklch(0.5 0.06 0.4);
   color: white;
 }
 .black {
@@ -160,6 +164,8 @@
   background-color: oklch(0.2 0 0);
   color: white;
 }
+/* Material colours */
+color-scheme: light dark;
 body {
   font-size: 13px;
   font-family: "barlow semi condensed";
@@ -314,7 +320,7 @@ img {
   .Daniel {
     grid-column: 1 / span 2;
   }
-  .Patrick {
+  /* .Patrick { */
     /* grid-column-end: -1; */
     /* grid-column: span 2; */
     /* background-color: black;
