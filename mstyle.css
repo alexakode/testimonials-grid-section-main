@@ -1,6 +1,9 @@
-* {
+/* * {
   /* margin: 0.1rem; */
   /* box-sizing: border-box; */
+/* } */
+:root {
+    color-scheme: light dark;
 }
 .barlow-semi-condensed-thin {
   font-family: "Barlow Semi Condensed", sans-serif;
