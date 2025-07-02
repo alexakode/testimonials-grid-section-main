@@ -121,7 +121,7 @@
 }
 .purple500 {
   background-color: hsl(263, 55%, 52%);
-  background-color: oklch(0.5 0.2 300);
+  background-color: oklch(55.938% 0.17517 2.088);
   color: white;
   /* border-color: hsl(264, 82%, 80%); */
 }
@@ -152,12 +152,12 @@
 }
 .darkblue {
   background-color: hsl(219, 29%, 14%);
-  background-color: oklch(0.25 0.03 260);
+  background-color: oklch(0.3 0.05 260);
   color: white;
 }
 .black {
   background-color: hsl(0, 0%, 7%);
-  background-color: oklch(0.18 0 0);
+  background-color: oklch(0.2 0 0);
   color: white;
 }
 body {
