@@ -333,23 +333,26 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .Daniel {
+    grid-row: 1;
+  }
   /* .Jeanette {
       grid-column: span 2;
     } */
-  /* .Jonathan {
-    /* grid-column-end: -2; */
-  /* grid-row: 3;
+  .Jonathan {
+    grid-row: 3;
   }
   .Kira {
     grid-row: 2 / 4;
+    /* grid-column: 2; */
   }
-  .Patrick {
+  /* .Patrick {
+    grid-column: span 2;
+  } */
+  .attribution {
+    grid-row: 5;
     grid-column: span 2;
   }
-  .attribution {
-    grid-row: 6;
-    grid-column: span 2; */
-  /* } */
 }
 @media only screen and (max-width: 600px) {
   .grid-container {
