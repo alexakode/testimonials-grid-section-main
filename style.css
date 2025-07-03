@@ -273,7 +273,7 @@ img {
   }
   .Jonathan {
   }
-  .Jeanette{
+  .Jeanette {
     grid-row: 2;
   }
   .Patrick {
@@ -285,7 +285,7 @@ img {
   }
   .attribution {
     /* grid-column: span 2; */
-    /* grid-row: 3; */
+    grid-row: span 2;
   }
 }
 @media only screen and (max-width: 1600px) {
@@ -317,7 +317,8 @@ img {
   }
   .attribution {
     grid-row: -1;
-    grid-column: span 1;
+    grid-column-start: 1;
+    grid-column-end: -1;
   }
 }
 @media only screen and (max-width: 1350px) {
@@ -353,7 +354,7 @@ img {
     grid-column: span 1;
   }
   .attribution {
-    grid-column: 1 span 2;
+    grid-column: span 2;
     grid-row: 4;
   }
 }
