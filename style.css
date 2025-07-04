@@ -1,7 +1,8 @@
-/* * {
-  /* margin: 0.1rem; */
-/* box-sizing: border-box; */
-/* } */
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
 .barlow-semi-condensed-thin {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 100;
@@ -213,7 +214,7 @@ body div {
 img {
   border: 2px solid;
   border-color: color-mix(in srgb, currentColor 50%, transparent 50%);
-  border-radius: 28px;
+  border-radius: 50%;
   object-fit: fill;
   /* z-index: 2; */
 }
