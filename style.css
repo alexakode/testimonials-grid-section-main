@@ -1,5 +1,5 @@
 * {
-  margin: 0; 
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -208,7 +208,7 @@ body div {
 .imgcontainer {
   object-fit: fill;
   width: fit-content;
-  height: fit-content;
+  height: 100%;
   /* border-radius: 50%; */
 }
 img {
@@ -244,8 +244,8 @@ img {
   border-radius: 0%;
   border: 0px;
   position: absolute;
-  right: 2rem;
-  top: 0;
+  right: 10%;
+  top: 0.1rem;
   object-position: 100%;
   z-index: 0;
 }
