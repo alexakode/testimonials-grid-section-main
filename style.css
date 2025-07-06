@@ -236,7 +236,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   /* margin: 1rem; */
   /* padding: 1rem; */
-  gap: 1rem;
+  gap: 2rem;
 }
 .grid > div {
   padding: 2rem;
@@ -296,7 +296,7 @@ img {
     grid-column: span 2;
   } */
 /* } */
-@media (min-width: 41rem) {
+@media (min-width: calc(2*20rem + 1 * 2rem)) {
   .Daniel {
     grid-column: span 2;
   }
@@ -308,23 +308,23 @@ img {
     /* grid-row: 2; */
   }
 }
-@media (min-width: 62rem) {
+@media (min-width: calc(3*20rem + 2 * 2rem)) {
   .Kira {
     grid-row: 1 / span 2;
     grid-column: -2 / span 1;
     /* grid-column: 4 */
   }
-  .Jonathan{
+  .Jonathan {
     grid-row: 2;
     grid-column: 2;
   }
-  .Jeanette{
-    grid-row 2;
+  .Jeanette {
+    grid-row: 2;
     grid-column: 1;
   }
 }
-@media (min-width: 83rem) {
-  .Jonathan{
+@media (min-width: calc(4*20rem + 3 * 2rem)) {
+  .Jonathan {
     grid-row: 1;
     grid-column: 3;
   }
@@ -332,42 +332,39 @@ img {
     /* grid-row: 1 / span 2; */
     /* grid-column: 4 / span 1; */
   }
-  .attribution{
+  .attribution {
     grid-column: 1 / -1;
   }
 }
-@media (min-width: 104rem) {
+@media (min-width: calc(5*20rem + 4 * 2rem)) {
   /* .attribution {
     grid-row: 3;
   } */
-  .Daniel{
+  .Daniel {
     grid-column: span 1;
   }
-  .Patrick{
+  .Patrick {
     /* grid-row: 1; */
     grid-column: 4 / 5;
   }
-  .Jonathan{
+  .Jonathan {
     grid-column: 2;
   }
-  .Jeanette{
+  .Jeanette {
     grid-row: 1;
     grid-column: 3;
   }
-  .Kira{
-    /* grid-column: 4; */
-    grid-row: 1 span 1;
-  }
-}
-@media (min-width: 105rem) {
-  .Kira{
+  .Kira {
     grid-column: 5;
     grid-row: span 1;
   }
+  .attribution {
+    grid-column: 1 / -1;
+  }
 }
-@media (min-width: 125rem) {
-  .attribution{
+@media (min-width: calc(6*20rem + 5 * 2rem)) {
+  .attribution {
     grid-row: span 1;
     grid-column: span 1;
-  } 
+  }
 }
