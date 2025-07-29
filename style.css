@@ -242,12 +242,17 @@ body div {
   flex-direction: column;
   /* z-index: 2; */
 }
+.grid-container {
+  padding: 2rem;
+  margin: 0 auto;
+  container-type: inline-size;
+}
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--min-col-width), 1fr));
+  gap: var(--grid-gap);
+  grid-template-columns: repeat(auto-fill, minmax(var(--min-col-width), 1fr));
   /* margin: 1rem; */
   /* padding: 1rem; */
-  gap: var(--grid-gap);
 }
 .grid > div {
   padding: 2rem;
@@ -307,7 +312,7 @@ body div {
     grid-column: span 2;
   } */
 /* } */
-@media (min-width: calc(2*20rem + 1 * 2rem)) {
+@container (min-width: calc(2*20rem + 1 * 2rem)) {
   /*Fill in the values "manually" from the specified --var, because calc() is not supported with var() inside media queries.*/
   .Daniel {
     grid-column: span 2;
@@ -330,7 +335,7 @@ body div {
     grid-column: span 2;
   }
 }
-@media (min-width: calc(3*20rem + 2 * 2rem)) {
+@container (min-width: calc(3*20rem + 2 * 2rem)) {
   .Kira {
     grid-row: 1 / span 2;
     grid-column: -2 / span 1;
@@ -348,20 +353,20 @@ body div {
     grid-column: span 1;
   }
 }
-@media (min-width: calc(4*20rem + 3 * 2rem)) {
+@container (min-width: calc(4*20rem + 3 * 2rem)) {
   .Jonathan {
     grid-row: 1;
     grid-column: 3;
   }
   /* .Kira {
     /* grid-row: 1 / span 2; */
-    /* grid-column: 4 / span 1; */
+  /* grid-column: 4 / span 1; */
   /* } */
   .attribution {
     grid-column: 1 / -1;
   }
 }
-@media (min-width: calc(5*20rem + 4 * 2rem)) {
+@container (min-width: calc(5*20rem + 4 * 2rem)) {
   /* .attribution {
     grid-row: 3;
   } */
@@ -387,7 +392,7 @@ body div {
     grid-column: 1 / -1;
   }
 }
-@media (min-width: calc(6*20rem + 5 * 2rem)) {
+@container (min-width: calc(6*20rem + 5 * 2rem)) {
   .attribution {
     grid-row: span 1;
     grid-column: span 1;
